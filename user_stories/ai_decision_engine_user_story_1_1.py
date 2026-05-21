@@ -8,7 +8,7 @@ EP001
 US001
 
 ## Title
-Event Classification and Decision Generation
+Event Classification and Decision Making
 
 ## Description
 As a user,
@@ -17,53 +17,82 @@ So that I can quickly understand the event severity and required actions without
 
 ## Acceptance Criteria
 
-### Given: Valid quality event input
-- When: User submits event details through the system
-- Then: System should classify the event as GxP or Non-GxP
-- And: System should determine severity level
-- And: System should provide change control requirement decision
-- And: System should generate impact assessment
-- And: System should provide recommended actions with rationale
+### Happy Path
+- Given a valid quality event input
+- When I submit the event data
+- Then the system should classify it as GxP or Non-GxP
+- And determine the severity level
+- And provide change control requirements
+- And generate impact assessment
+- And recommend specific actions
+- And explain the rationale behind decisions
 
-### Given: Invalid or incomplete event data
-- When: User submits incomplete event information
-- Then: System should validate input and provide specific error messages
-- And: System should guide user on required fields
+### Validation Scenarios
+- Given incomplete event data
+- When I submit the form
+- Then the system should validate required fields
+- And provide clear error messages for missing information
 
-### Given: System processing event
-- When: AI decision engine processes the event
-- Then: Response should be in standardized JSON format
-- And: Processing time should not exceed 30 seconds
-- And: System should log all decisions for audit trail
+- Given invalid event data format
+- When I submit malformed data
+- Then the system should reject the input
+- And provide format correction guidance
+
+### Edge Cases
+- Given an ambiguous event that could be GxP or Non-GxP
+- When the AI processes it
+- Then it should flag for manual review
+- And provide confidence scores for its classification
+
+- Given a high-severity event
+- When classified
+- Then it should trigger immediate notifications
+- And escalate to appropriate stakeholders
+
+### Integration Scenarios
+- Given the AI decision engine is integrated with LLM
+- When processing events
+- Then responses should be generated within 30 seconds
+- And maintain 99% uptime
+
+### Security Validations
+- Given sensitive quality event data
+- When processed
+- Then all data should be encrypted in transit and at rest
+- And access should be logged for audit trails
 
 ## Functional Requirements
-- Input validation for event data structure
-- Integration with LLM services (OpenAI or alternatives)
-- JSON schema validation for responses
-- Event classification logic (GxP/Non-GxP determination)
-- Severity assessment algorithm
-- Change control requirement evaluation
+- Event input validation and sanitization
+- GxP/Non-GxP classification algorithm
+- Severity assessment (Critical, Major, Minor)
+- Change control requirement determination
 - Impact assessment generation
-- Recommendation engine with rationale explanation
+- Action recommendation engine
+- Rationale explanation system
+- JSON response formatting
+- LLM integration layer
+- Confidence scoring mechanism
+
+## Non-Functional Requirements
+- Response time: < 30 seconds for standard events
+- Availability: 99.9% uptime
+- Scalability: Handle 1000+ concurrent requests
+- Security: SOC 2 Type II compliance
+- Data retention: 7 years for GxP events
+- Audit logging: All decisions logged with timestamps
 
 ## Validations
-- Event data completeness validation
-- JSON schema compliance validation
-- Classification accuracy validation
-- Response time validation (< 30 seconds)
-- Audit trail logging validation
-
-## Non Functional Requirements
-- System availability: 99.9%
-- Response time: < 30 seconds for event processing
-- Concurrent user support: 100 users
-- Data encryption in transit and at rest
-- GDPR compliance for data handling
-- Scalability to handle 10,000 events per day
+- Input data completeness check
+- Data format validation (JSON schema)
+- Business rule validation
+- Output format validation
+- Confidence threshold validation (minimum 70%)
+- Regulatory compliance validation
 
 ## Assumptions
-- LLM service (OpenAI) is available and accessible
-- Event data follows predefined schema structure
-- Users have appropriate system access permissions
+- LLM API (OpenAI or equivalent) is available and accessible
+- Quality event data follows standardized format
+- Users have appropriate permissions for event submission
 - Network connectivity is stable for API calls
+- Regulatory requirements are pre-defined and accessible
 """
