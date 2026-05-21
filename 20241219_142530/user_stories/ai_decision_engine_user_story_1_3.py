@@ -8,87 +8,201 @@ EP001
 US003
 
 ## Title
-JSON Response Schema and LLM Integration
+Impact Assessment and Recommendation Generation
 
 ## Description
-As a system,
-I want to integrate with LLM services and return structured JSON responses,
-So that downstream systems can reliably consume AI-generated decisions and recommendations.
+As a quality system,
+I want to generate comprehensive impact assessments and actionable recommendations for quality events,
+So that stakeholders receive clear guidance on required actions and potential consequences.
 
 ## Acceptance Criteria
 
-### JSON Schema Validation Scenarios
-- Given AI-generated decision data
-- When the system formats response
-- Then it should conform to predefined JSON schema
-- And include all required fields with correct data types
-- And validate response structure before returning
-- And handle schema validation errors gracefully
+### Given-When-Then Scenarios
 
-### LLM Integration Scenarios
-- Given quality event input
-- When system calls LLM service
-- Then it should use appropriate prompt templates
-- And handle LLM API authentication securely
-- And manage rate limits and retries
-- And process LLM responses into structured format
+#### Happy Path - Impact Assessment Generation
+- Given a classified and severity-assessed quality event
+- When the system generates impact assessment
+- Then it should analyze affected products and processes
+- And evaluate customer and patient safety implications
+- And assess regulatory compliance risks
+- And calculate business continuity impact
+- And provide quantified risk scores
 
-### Response Format Scenarios
-- Given processed event data
-- When generating final response
-- Then JSON should include event classification
-- And impact assessment results
-- And recommended actions array
-- And rationale explanations
-- And confidence scores for each decision
+#### Happy Path - Recommendation Generation
+- Given a complete impact assessment
+- When the system generates recommendations
+- Then it should provide immediate containment actions
+- And suggest corrective and preventive actions (CAPA)
+- And recommend investigation scope and timeline
+- And specify required notifications and reporting
+- And prioritize actions based on risk and urgency
 
-### Error Handling Scenarios
-- Given LLM service unavailability
-- When system attempts integration
-- Then it should implement fallback mechanisms
-- And return appropriate error responses
-- And maintain service availability
-- And log integration failures for monitoring
+#### Happy Path - Rationale Documentation
+- Given generated recommendations
+- When the system documents rationale
+- Then it should explain decision logic and criteria used
+- And reference applicable regulations and guidelines
+- And cite relevant historical cases or precedents
+- And provide confidence levels for each recommendation
+- And include alternative approaches considered
 
-### Performance Scenarios
-- Given high volume of requests
-- When system processes multiple events
-- Then it should optimize LLM API calls
-- And implement response caching where appropriate
-- And maintain response time SLAs
-- And handle concurrent requests efficiently
+#### Validation Scenario - Incomplete Assessment Data
+- Given insufficient data for complete impact assessment
+- When the system attempts to generate recommendations
+- Then it should identify data gaps and uncertainties
+- And provide preliminary recommendations with caveats
+- And request additional information for complete assessment
+- And flag high-risk assumptions made
+
+#### Edge Case - Conflicting Recommendations
+- Given multiple applicable guidelines with different requirements
+- When the system generates recommendations
+- Then it should identify conflicts and provide options
+- And recommend most conservative approach
+- And escalate to subject matter experts
+- And document rationale for approach selection
+
+#### Integration Scenario - External Stakeholder Notifications
+- Given recommendations requiring external notifications
+- When the system processes notification requirements
+- Then it should identify all required recipients
+- And generate appropriate notification content
+- And schedule notifications per regulatory timelines
+- And track notification delivery and acknowledgments
 
 ## Functional Requirements
-- Define comprehensive JSON response schema for all outputs
-- Implement LLM integration layer with OpenAI or alternative providers
-- Create prompt templates for different event types and scenarios
-- Build response validation and formatting engine
-- Implement error handling and fallback mechanisms
-- Support multiple LLM providers with configuration-based switching
-- Create response caching mechanism for similar events
-- Build confidence scoring system for AI decisions
+
+### FR001: Multi-Dimensional Impact Analysis
+- Assess patient safety and product quality impacts
+- Evaluate regulatory compliance and reporting obligations
+- Analyze supply chain and business continuity effects
+- Consider reputational and financial implications
+- Support impact quantification with metrics and KPIs
+
+### FR002: Risk-Based Recommendation Engine
+- Generate prioritized action recommendations
+- Consider resource availability and implementation feasibility
+- Align with company risk tolerance and policies
+- Support emergency and routine response procedures
+- Integrate with existing CAPA and investigation workflows
+
+### FR003: Regulatory Intelligence Integration
+- Access current regulatory requirements and guidelines
+- Apply jurisdiction-specific reporting obligations
+- Consider product registration and approval conditions
+- Support multiple regulatory framework compliance
+- Maintain currency with regulatory updates and changes
+
+### FR004: Decision Rationale Documentation
+- Capture complete decision logic and supporting evidence
+- Reference applicable regulations, guidelines, and precedents
+- Document assumptions, limitations, and uncertainties
+- Support regulatory inspection and audit requirements
+- Enable decision review and continuous improvement
+
+### FR005: Stakeholder Communication Management
+- Generate targeted communications for different audiences
+- Support multiple communication channels and formats
+- Track communication delivery and response requirements
+- Integrate with notification and escalation procedures
+- Maintain communication audit trail and effectiveness metrics
 
 ## Validations
-- All JSON responses must validate against defined schema
-- LLM API keys must be securely stored and rotated
-- Prompt templates must be version controlled and tested
-- Response confidence scores must be within valid ranges (0-1)
-- All API calls must include proper authentication headers
-- Response times must be monitored and logged
 
-## Non Functional Requirements
-- API Response Time: Maximum 15 seconds including LLM calls
-- Schema Compliance: 100% of responses must validate
-- LLM Integration Uptime: 99.5% availability
-- Security: All API keys encrypted at rest and in transit
-- Monitoring: Real-time tracking of LLM usage and costs
-- Scalability: Support 200 concurrent LLM requests
+### Impact Assessment Validations
+- Verify completeness of impact analysis across all dimensions
+- Validate risk scoring consistency and calibration
+- Ensure impact assessment aligns with event classification and severity
+- Check compliance with company risk assessment procedures
+- Validate quantitative impact calculations and assumptions
+
+### Recommendation Quality Validations
+- Ensure recommendations are specific, measurable, and actionable
+- Validate feasibility and resource requirements for proposed actions
+- Check alignment with company policies and procedures
+- Verify regulatory compliance of recommended actions
+- Ensure recommendation prioritization reflects actual risk levels
+
+### Regulatory Compliance Validations
+- Validate notification requirements against current regulations
+- Ensure reporting timelines comply with regulatory obligations
+- Check content requirements for regulatory submissions
+- Verify jurisdiction-specific compliance requirements
+- Validate escalation procedures for regulatory interactions
+
+## Non-Functional Requirements
+
+### Processing Performance
+- Generate impact assessment within 10 seconds of event classification
+- Support concurrent processing of multiple assessments
+- Optimize recommendation generation for real-time delivery
+- Maintain performance under high-volume event scenarios
+- Cache frequently accessed regulatory and reference data
+
+### Content Quality and Consistency
+- Ensure consistent recommendation quality across similar events
+- Maintain standardized format and terminology
+- Support multiple languages for global operations
+- Provide clear and actionable guidance for non-experts
+- Enable customization for different business units and regions
+
+### Integration and Interoperability
+- Interface with existing quality management systems
+- Support standard data exchange formats (JSON, XML, HL7)
+- Integrate with notification and workflow management systems
+- Provide APIs for third-party system integration
+- Support real-time and batch processing modes
+
+### Auditability and Traceability
+- Maintain complete audit trail of assessment and recommendation generation
+- Support version control for recommendation templates and logic
+- Enable reconstruction of decision process for regulatory review
+- Provide detailed logging of system interactions and data sources
+- Support compliance reporting and metrics generation
 
 ## Assumptions
-- LLM service providers maintain stable API interfaces
-- Prompt engineering best practices are followed
-- JSON schema requirements are stable and well-defined
-- Network connectivity to LLM services is reliable
-- Cost budgets are approved for LLM API usage
-- Response validation rules are comprehensive and current
+
+### Business Process Assumptions
+- Impact assessment criteria are clearly defined and approved
+- Recommendation templates are current and reflect best practices
+- Stakeholder notification procedures are documented and current
+- Resource availability information is accessible for feasibility assessment
+- Escalation procedures are clearly defined for different scenarios
+
+### Technical Infrastructure Assumptions
+- Regulatory databases and reference systems are accessible and current
+- Integration with existing quality systems is feasible and supported
+- Notification systems can handle generated communication volumes
+- Performance requirements can be met with available infrastructure
+- Security requirements can be satisfied with current architecture
+
+### Regulatory and Compliance Assumptions
+- Current regulatory interpretation is accurate and up-to-date
+- Generated recommendations will be acceptable to regulatory authorities
+- Notification and reporting requirements are properly understood
+- Cross-jurisdictional regulatory differences are properly handled
+- Regulatory changes can be incorporated through system updates
+
+## Dependencies
+
+### Internal System Dependencies
+- Quality event classification and severity assessment system
+- Regulatory reference database and update mechanisms
+- Stakeholder directory and communication systems
+- Resource planning and availability systems
+- Audit logging and compliance monitoring infrastructure
+
+### External Dependencies
+- Regulatory authority databases and guidance documents
+- Industry best practice libraries and standards
+- Third-party risk assessment and analysis tools
+- External notification and communication services
+- Regulatory consulting and subject matter expert services
+
+### Data and Content Dependencies
+- Current regulatory requirements and guidelines database
+- Historical case studies and precedent library
+- Company policies, procedures, and risk tolerance parameters
+- Stakeholder contact information and communication preferences
+- Resource availability and capacity planning data
 """
