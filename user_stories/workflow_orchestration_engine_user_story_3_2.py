@@ -5,75 +5,168 @@
 EP003
 
 ## User Story Id
-US010
+US008
 
 ## Title
-Inter-Step Data Flow and Output Passing
+Output Passing Between Pipeline Steps
 
 ## Description
-As a system,
-I want to pass outputs from step N to step N+1 seamlessly with data transformation and validation,
-So that workflow steps can build upon previous results and maintain data integrity throughout the pipeline.
+As a workflow orchestration system,
+I want to pass the output of step N as input to step N+1 seamlessly,
+So that data flows correctly through the entire pipeline without manual intervention or data loss.
 
 ## Acceptance Criteria
 
-### Given: Step N completion with output data
-- When: System prepares data for next step
-- Then: System should capture and validate step N output
-- And: System should transform data to step N+1 input format
-- And: System should validate data compatibility and completeness
-- And: System should handle data serialization and storage
+### Given: Step N Completion with Output
+- When step N completes successfully and produces output
+- Then I should capture the complete output data and metadata
+- And validate output format against step N's output specification
+- And store output with proper versioning and timestamp information
+- And trigger the handoff process to step N+1
 
-### Given: Step N+1 initialization
-- When: System provides input data to next step
-- Then: System should retrieve and deserialize step N output
-- And: System should validate input data against step requirements
-- And: System should provide data in expected format and structure
-- And: System should handle data access permissions and security
+### Given: Output Format Transformation
+- When step N output format differs from step N+1 input requirements
+- Then I should apply configured transformation rules automatically
+- And validate transformed data maintains semantic integrity
+- And log transformation details for audit and debugging purposes
+- And handle transformation errors with appropriate fallback mechanisms
 
-### Given: Data transformation requirements
-- When: Output format differs from input requirements
-- Then: System should apply configured data transformation rules
-- And: System should validate transformation accuracy and completeness
-- And: System should handle data type conversions and mappings
-- And: System should preserve data lineage and traceability
+### Given: Data Quality Validation
+- When passing data between steps
+- Then I should validate data completeness and quality metrics
+- And check data against defined business rules and constraints
+- And verify data integrity using checksums or validation algorithms
+- And reject invalid data with clear error messages and remediation guidance
 
-### Given: Data validation and error scenarios
-- When: Data quality issues or incompatibilities occur
-- Then: System should detect and report data validation errors
-- And: System should provide detailed error messages and context
-- And: System should support data correction and retry mechanisms
-- And: System should maintain data integrity throughout error handling
+### Given: Multiple Output Scenarios
+- When step N produces multiple outputs for different downstream steps
+- Then I should route each output to the appropriate target step
+- And maintain output relationships and dependencies
+- And support conditional routing based on output characteristics
+- And ensure all required outputs are properly delivered
+
+### Given: Error Handling in Data Passing
+- When data passing fails due to format, quality, or system issues
+- Then I should capture detailed error information and context
+- And implement retry mechanisms for transient failures
+- And provide manual intervention options for complex data issues
+- And maintain workflow integrity while resolving data passing problems
 
 ## Functional Requirements
-- Implement data pipeline with serialization and deserialization
-- Create data transformation engine with configurable rules
-- Build data validation framework with comprehensive checks
-- Develop data lineage tracking and audit capabilities
-- Support multiple data formats (JSON, XML, binary, etc.)
-- Create data caching and temporary storage management
-- Implement data security and access control mechanisms
+
+### FR001: Output Capture and Management
+- Capture step outputs in standardized format with metadata
+- Support multiple output types (files, data structures, API responses, artifacts)
+- Implement output versioning and change tracking
+- Provide output storage with appropriate retention policies
+
+### FR002: Data Transformation Engine
+- Apply configurable transformation rules between step outputs and inputs
+- Support multiple transformation types (format conversion, data mapping, aggregation)
+- Implement transformation validation and quality assurance
+- Maintain transformation rule versioning and change management
+
+### FR003: Input Validation and Delivery
+- Validate input data against step specifications before delivery
+- Support multiple delivery mechanisms (direct transfer, API calls, file systems)
+- Implement delivery confirmation and acknowledgment protocols
+- Provide input preparation and staging capabilities
+
+### FR004: Data Lineage and Traceability
+- Maintain complete data lineage from source through all transformations
+- Track data provenance and transformation history
+- Support impact analysis for data changes and updates
+- Provide audit trails for regulatory compliance and debugging
 
 ## Validations
-- Validate data transformation accuracy and completeness
-- Verify data format compatibility between steps
-- Confirm data integrity throughout the pipeline
-- Check data validation rule effectiveness
-- Validate data lineage tracking accuracy
-- Ensure data security and privacy compliance
+
+### Output Quality Validations
+- Verify output completeness against step specifications
+- Validate output format and schema compliance
+- Check output data quality metrics and business rules
+- Ensure output metadata accuracy and completeness
+
+### Transformation Validations
+- Validate transformation rule accuracy and completeness
+- Check transformed data integrity and semantic preservation
+- Verify transformation performance within acceptable limits
+- Ensure transformation reversibility where required
+
+### Input Delivery Validations
+- Confirm successful input delivery to target steps
+- Validate input format compatibility with step requirements
+- Check input data availability and accessibility
+- Verify input timing and dependency satisfaction
+
+### System Integration Validations
+- Validate connectivity and compatibility between pipeline steps
+- Check data transfer protocols and security compliance
+- Verify error handling and recovery mechanisms
+- Ensure proper logging and monitoring of data passing operations
 
 ## Non Functional Requirements
-- Data transfer: < 5 seconds for standard datasets
-- Data integrity: 100% accuracy in data passing
-- Scalability: Handle datasets up to 1GB efficiently
-- Security: Encrypt sensitive data in transit and at rest
-- Reliability: 99.9% successful data transfer rate
-- Monitoring: Real-time data flow visibility and metrics
+
+### Performance and Efficiency
+- Data passing completion within 30 seconds for standard datasets
+- Support concurrent data passing for multiple workflow instances
+- Optimize data transfer and transformation performance
+- Minimize resource utilization during data passing operations
+
+### Reliability and Data Integrity
+- Ensure 99.99% data passing success rate for valid inputs
+- Implement comprehensive error detection and correction
+- Maintain data consistency and integrity throughout passing process
+- Support atomic operations and rollback capabilities
+
+### Scalability and Throughput
+- Handle large datasets (up to 10GB) without performance degradation
+- Support high-frequency data passing for real-time workflows
+- Scale data passing infrastructure based on demand
+- Optimize for both batch and streaming data scenarios
+
+### Security and Privacy
+- Encrypt sensitive data during transfer and transformation
+- Implement access controls for data passing operations
+- Maintain audit logs for security compliance
+- Support data masking and anonymization requirements
 
 ## Assumptions
-- Step output formats are well-defined and documented
-- Data transformation rules are properly configured
-- Sufficient storage capacity for intermediate data
-- Network bandwidth supports data transfer requirements
-- Data privacy and security requirements are clearly defined
+
+### Data Assumptions
+- Step outputs are well-defined and consistently formatted
+- Data transformation requirements are clearly specified and stable
+- Input requirements for each step are documented and validated
+- Data quality standards are established and measurable
+
+### Technical Assumptions
+- Network connectivity between steps is reliable and secure
+- Storage systems can handle required data volumes and access patterns
+- Transformation algorithms can process data within acceptable time limits
+- Integration protocols are standardized and well-supported
+
+### Operational Assumptions
+- Data passing monitoring and alerting systems are in place
+- Support processes are available for data passing troubleshooting
+- Data governance policies are established and enforced
+- Performance requirements can be met with available infrastructure
+
+## Dependencies
+
+### Infrastructure Dependencies
+- High-performance storage systems for data staging and transfer
+- Network infrastructure supporting required data transfer rates
+- Compute resources for data transformation and validation
+- Monitoring systems for data passing performance and quality
+
+### System Dependencies
+- Workflow orchestration engine for step coordination
+- Data transformation and validation tools
+- Security and encryption services for data protection
+- Logging and audit systems for compliance and debugging
+
+### Process Dependencies
+- Data governance and quality management processes
+- Error handling and escalation procedures
+- Performance monitoring and optimization workflows
+- Change management for transformation rules and data formats
 """
