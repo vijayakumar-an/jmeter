@@ -8,108 +8,74 @@ EP001
 US002
 
 ## Title
-GxP and Non-GxP Event Classification
+Change Control Requirement Evaluation
 
 ## Description
 As a system,
-I want to automatically evaluate and classify quality events as GxP or Non-GxP,
-So that appropriate regulatory compliance measures can be applied.
+I want to evaluate events and determine change control requirements,
+So that appropriate governance processes are triggered based on event classification and severity.
 
 ## Acceptance Criteria
 
-### Given-When-Then Scenarios
+### GxP Change Control Assessment
+- Given a GxP-classified event with high severity
+- When the system evaluates change control requirements
+- Then it should mandate formal change control process
+- And identify required approvals and documentation
 
-**Happy Path:**
-- Given a quality event with product impact indicators
-- When the system evaluates GxP classification
-- Then it should correctly classify as GxP and set appropriate flags
+### Non-GxP Change Control Assessment
+- Given a Non-GxP event with medium severity
+- When the system evaluates change control requirements
+- Then it should recommend simplified change process
+- And specify minimal documentation requirements
 
-- Given a quality event with no product impact
-- When the system evaluates GxP classification  
-- Then it should correctly classify as Non-GxP
+### Severity-Based Requirements
+- Given any classified event
+- When severity is critical or high
+- Then formal change control should be required
+- And executive approval should be mandated
 
-**Classification Scenarios:**
-- Given an event affecting manufacturing processes
-- When the system analyzes the event context
-- Then it should classify as GxP and require enhanced documentation
+### Low Impact Evaluation
+- Given events with low severity and minimal impact
+- When change control evaluation occurs
+- Then streamlined process should be recommended
+- And self-approval mechanisms should be enabled
 
-- Given an event affecting IT infrastructure only
-- When the system analyzes the event context
-- Then it should classify as Non-GxP with standard documentation
-
-**Edge Cases:**
-- Given an event with ambiguous product impact
-- When the system cannot determine clear classification
-- Then it should default to GxP classification for safety
-
-- Given an event affecting both GxP and Non-GxP systems
-- When the system evaluates mixed impact
-- Then it should classify as GxP due to partial regulatory impact
-
-**Validation Scenarios:**
-- Given classification results are generated
-- When the system validates the decision
-- Then it should provide clear rationale for the classification
+### Regulatory Compliance Check
+- Given GxP events affecting regulated processes
+- When change control evaluation runs
+- Then regulatory impact assessment should be triggered
+- And compliance requirements should be identified
 
 ## Functional Requirements
-
-1. **Classification Logic**
-   - Analyze event attributes for regulatory impact
-   - Apply GxP determination rules based on FDA guidelines
-   - Consider product lifecycle stage in classification
-   - Evaluate patient safety implications
-
-2. **Decision Criteria**
-   - Product manufacturing impact assessment
-   - Quality system involvement evaluation
-   - Patient safety risk analysis
-   - Regulatory submission requirements
-
-3. **Output Generation**
-   - Generate classification result (GxP/Non-GxP)
-   - Provide confidence score for classification
-   - Document decision rationale
-   - Set appropriate compliance flags
-
-## Non-Functional Requirements
-
-1. **Accuracy**
-   - Achieve 95% classification accuracy
-   - Minimize false negatives for GxP events
-   - Provide consistent classification results
-
-2. **Performance**
-   - Complete classification within 3 seconds
-   - Support batch classification processing
-   - Handle complex event scenarios efficiently
-
-3. **Compliance**
-   - Align with FDA 21 CFR Part 11 requirements
-   - Support audit trail generation
-   - Maintain classification decision history
+- Analyze event classification and severity data
+- Apply change control decision matrix
+- Determine approval workflow requirements
+- Identify required documentation and evidence
+- Generate change control recommendations
+- Interface with change management systems
+- Track change control decisions and outcomes
 
 ## Validations
+- Event classification data completeness
+- Severity score within valid ranges
+- Change control rules consistency
+- Approval workflow validation
+- Regulatory requirement compliance
+- Decision audit trail completeness
 
-1. **Input Validations**
-   - Event must contain sufficient context for classification
-   - Required regulatory fields must be present for GxP events
-   - Event source system must be validated
-
-2. **Classification Validations**
-   - Confidence score must meet minimum threshold
-   - Decision rationale must be documented
-   - Classification must align with regulatory guidelines
-
-3. **Output Validations**
-   - Classification result must be binary (GxP/Non-GxP)
-   - Rationale must reference specific decision criteria
-   - Compliance flags must be appropriately set
+## Non Functional Requirements
+- Decision processing: < 2 seconds
+- Rule engine performance: Handle complex decision trees
+- Integration: Seamless connection to change management systems
+- Reliability: 99.95% decision accuracy
+- Scalability: Support enterprise-wide change volume
+- Security: Protect sensitive change control data
 
 ## Assumptions
-
-1. Event data contains sufficient context for accurate classification
-2. GxP determination rules are current and validated
-3. System has access to regulatory compliance databases
-4. Classification decisions can be overridden by qualified personnel
-5. Audit trail capabilities are available for all classifications
+- Event classification is accurate and complete
+- Change control rules are current and validated
+- Approval workflows are properly configured
+- Integration endpoints are available and responsive
+- User permissions are properly managed
 """
