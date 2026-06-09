@@ -1,0 +1,5 @@
+{
+  "processor": "AMD",
+  "memory": "64GB",
+  "status": "PASS"
+}
