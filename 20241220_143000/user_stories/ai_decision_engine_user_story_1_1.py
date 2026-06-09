@@ -8,95 +8,73 @@ EP001
 US001
 
 ## Title
-Quality Event Classification Input
+Event Classification Input Processing
 
 ## Description
 As a user,
-I want to input a quality event into the AI Decision Engine,
-So that I can receive automated classification and recommendations for the event.
+I want to input a quality event and get automatic classification,
+So that I can understand the event type and severity for proper handling.
 
 ## Acceptance Criteria
 
-### Given-When-Then Scenarios
+### Happy Path
+- Given a valid quality event input
+- When I submit the event details
+- Then the system should classify the event as GxP or Non-GxP
+- And the system should determine the severity level
+- And the system should return a structured JSON response
 
-**Happy Path:**
-- Given I have a structured quality event with all required fields
-- When I submit the event to the AI Decision Engine
-- Then the system should accept the input and return a confirmation
+### Input Validation
+- Given invalid or incomplete event data
+- When I submit the event
+- Then the system should return validation errors
+- And provide clear guidance on required fields
 
-**Validation Scenarios:**
-- Given I submit an event with missing required fields
-- When the system validates the input
-- Then it should return specific validation errors for each missing field
+### Classification Accuracy
+- Given a GxP-related event (drug manufacturing, clinical trials, regulatory compliance)
+- When the system processes the event
+- Then it should correctly classify as GxP
+- And assign appropriate severity based on patient safety impact
 
-- Given I submit an event with invalid data types
-- When the system processes the input
-- Then it should return data type validation errors
+### Non-GxP Classification
+- Given a non-GxP event (IT systems, facilities, general operations)
+- When the system processes the event
+- Then it should correctly classify as Non-GxP
+- And assign severity based on business impact
 
-**Edge Cases:**
-- Given I submit an event with maximum allowed data size
-- When the system processes the input
-- Then it should handle the large payload without performance degradation
-
-- Given I submit multiple events simultaneously
-- When the system processes concurrent requests
-- Then each event should be processed independently without interference
-
-**Security Validations:**
-- Given I submit an event with potentially malicious content
-- When the system validates the input
-- Then it should sanitize and reject harmful content
+### Response Format
+- Given any valid event input
+- When classification is complete
+- Then the response should be in valid JSON format
+- And include classification, severity, and confidence scores
 
 ## Functional Requirements
-
-1. **Input Validation**
-   - Validate required fields: event_id, event_type, description, severity_level, affected_systems
-   - Validate data types and formats
-   - Sanitize input data to prevent injection attacks
-
-2. **Event Structure Support**
-   - Support structured event formats (JSON, XML)
-   - Handle nested event data structures
-   - Maintain data integrity during processing
-
-3. **Response Generation**
-   - Provide immediate acknowledgment of event receipt
-   - Generate unique tracking ID for each submitted event
-   - Return validation results with specific error messages
-
-## Non-Functional Requirements
-
-1. **Performance**
-   - Process event input within 2 seconds
-   - Support concurrent processing of up to 100 events
-   - Maintain 99.9% uptime
-
-2. **Security**
-   - Encrypt all data in transit using TLS 1.3
-   - Implement input sanitization and validation
-   - Log all access attempts for audit purposes
-
-3. **Scalability**
-   - Handle increasing event volumes without degradation
-   - Support horizontal scaling capabilities
+- Accept structured event input (text, form data, or JSON)
+- Integrate with LLM for intelligent classification
+- Apply business rules for GxP determination
+- Calculate severity scores based on impact assessment
+- Return standardized JSON response format
+- Log all classification decisions for audit trail
 
 ## Validations
+- Input data completeness validation
+- Event type validation against known categories
+- Severity scoring validation within defined ranges
+- JSON schema validation for responses
+- Authentication and authorization checks
 
-1. **Input Validations**
-   - Event ID must be unique and alphanumeric
-   - Event type must be from predefined list
-   - Description must not exceed 5000 characters
-   - Severity level must be: Critical, High, Medium, Low
-
-2. **Business Rule Validations**
-   - Critical events must include immediate contact information
-   - GxP events must include regulatory compliance fields
-   - System events must include affected system identifiers
+## Non Functional Requirements
+- Response time: < 3 seconds for classification
+- Availability: 99.9% uptime
+- Scalability: Handle 1000+ concurrent requests
+- Security: Encrypt sensitive event data
+- Audit: Log all classification activities
+- Performance: Process events without degradation
 
 ## Assumptions
-
-1. Users have appropriate permissions to submit quality events
-2. Network connectivity is stable for API communications
-3. Input events follow the predefined schema structure
-4. Authentication and authorization are handled by upstream systems
+- Users have proper authentication credentials
+- Event data follows predefined input schema
+- LLM service is available and responsive
+- Classification rules are maintained and updated
+- Audit logging system is operational
 """
