@@ -1,1 +1,8 @@
-{"AMD-64GB": [...]}
+{
+    "AMD-64GB": [
+        {
+            "Target Service": "Data Collected By",
+            "Document Analysis Service": "Shray Saxena"
+        }
+    ]
+}
