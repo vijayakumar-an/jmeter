@@ -1,0 +1,117 @@
+{
+  "system_information": "AMD RYZEN AI MAX PRO 64 GB, w/ Radeon 8050S (3.2 GHz)",
+  "results": [
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "AddDocumentAsync",
+      "description": "Response time 2809ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is < 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 17 Kb",
+      "label": "AddDocumentAsync",
+      "description": "Response time 2630ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is < 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pptx file of size around 38 Kb",
+      "label": "AddDocumentAsync",
+      "description": "Response time 3360ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is < 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pdf file of size around 7MB",
+      "label": "AddDocumentAsync",
+      "description": "Response time 9090ms exceeds NFR threshold of 3000ms for files 5 to 10 MB",
+      "comment": "Target response is 3 secs"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .pdf file of size around 11 MB",
+      "label": "AddDocumentAsync",
+      "description": "Response time 32790ms exceeds NFR threshold of 4500ms for files 10 to 15 MB",
+      "comment": "Target response is 4.5 secs"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .docx file of size around 14 MB",
+      "label": "AddDocumentAsync",
+      "description": "Response time 598960ms exceeds NFR threshold of 4500ms for files 10 to 15 MB",
+      "comment": "Target response is 4.5 secs"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .pdf file of size around 21 MB",
+      "label": "AddDocumentAsync",
+      "description": "Response time 45299ms exceeds NFR threshold of 7500ms for files 15 to 25 MB",
+      "comment": "Target response is 7.5 secs"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .docx file of size around 9 MB containing multilungal data",
+      "label": "AddDocumentAsync",
+      "description": "Response time 2475421ms exceeds NFR threshold of 3000ms for files 5 to 10 MB",
+      "comment": "Target response is < 3 secs"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .docx file of size around 9 MB containing multilungal data",
+      "label": "GetDocumentChunkIds",
+      "description": "Error rate 1% exceeds NFR threshold of 0%",
+      "comment": "Failed, Got error \"Failed to execute LLM command\""
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Adding .docx file of size around 2 MB",
+      "label": "AddDocumentAsync",
+      "description": "Response time 2797802ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Adding .pdf file of size around 9 MB containing multilungal data",
+      "label": "AddDocumentAsync",
+      "description": "Response time 1959620ms exceeds NFR threshold of 3000ms for files 5 to 10 MB",
+      "comment": "Target response is 3 secs"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Adding .pdf file of size around 1 MB containing multilungal data",
+      "label": "AddDocumentAsync",
+      "description": "Response time 194409ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is less than 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 16",
+      "testcase_name": "Adding .pdf file of size around 2 MB with combination of image and text both",
+      "label": "AddDocumentAsync",
+      "description": "Response time 246270ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is less than 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Adding .docx file of size 38KB with combination of image and text both",
+      "label": "AddDocumentAsync",
+      "description": "Response time 2739ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is less than 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Adding .docx file of size 3 MB with combination of image and text both",
+      "label": "AddDocumentAsync",
+      "description": "Response time 86057ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is less than 1.5 secs"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Adding .pdf file of 3MB and executing the script 2 times simultaneously and observe the behavior",
+      "label": "AddDocumentAsync",
+      "description": "Response time 17947ms exceeds NFR threshold of 1500ms for files up to 5MB",
+      "comment": "Target response is less than 1.5 secs"
+    }
+  ]
+}
