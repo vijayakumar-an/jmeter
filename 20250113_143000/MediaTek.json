@@ -1,0 +1,389 @@
+{
+  "system_information": "MediaTek, App Version: 111.222.333",
+  "results": [
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2160 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetDocuments",
+      "description": "3300 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "3290 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetChunkText",
+      "description": "3480 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "AddDocumentAsync",
+      "description": "3760 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetDocuments",
+      "description": "2050 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "2030 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetChunkText",
+      "description": "2600 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "AddDocumentAsync",
+      "description": "3050 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "GetDocuments",
+      "description": "3370 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "1820 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "GetChunkText",
+      "description": "2620 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2240 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetDocuments",
+      "description": "3460 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "1890 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetChunkText",
+      "description": "1880 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "AddDocumentAsync",
+      "description": "3420 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "GetDocuments",
+      "description": "2420 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "2980 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "GetChunkText",
+      "description": "3100 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .pdf file of size around 1 Mb",
+      "label": "AddDocumentAsync",
+      "description": "3170 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .pdf file of size around 1 Mb",
+      "label": "GetDocuments",
+      "description": "2880 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .pdf file of size around 1 Mb",
+      "label": "GetDocumentChunkIds",
+      "description": "2840 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "AddDocumentAsync",
+      "description": "2700 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "GetDocuments",
+      "description": "3020 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "GetDocumentChunkIds",
+      "description": "1960 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "GetChunkText",
+      "description": "2820 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2460 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetDocuments",
+      "description": "2960 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "2220 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetChunkText",
+      "description": "2560 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "GetDocuments",
+      "description": "2250 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "GetChunkText",
+      "description": "2420 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "AddDocumentAsync",
+      "description": "3540 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetDocuments",
+      "description": "3670 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetDocumentChunkIds",
+      "description": "2910 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetChunkText",
+      "description": "2570 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "AddDocumentAsync",
+      "description": "2880 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "GetDocuments",
+      "description": "3330 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "GetDocumentChunkIds",
+      "description": "2520 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "GetChunkText",
+      "description": "2470 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "AddDocumentAsync",
+      "description": "3210 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "GetDocuments",
+      "description": "3330 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "GetChunkText",
+      "description": "2960 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "AddDocumentAsync",
+      "description": "3780 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "GetDocuments",
+      "description": "2800 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "GetDocumentChunkIds",
+      "description": "3310 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "GetChunkText",
+      "description": "2500 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "AddDocumentAsync",
+      "description": "3430 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetDocuments",
+      "description": "3340 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetDocumentChunkIds",
+      "description": "3800 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetChunkText",
+      "description": "3200 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 16",
+      "testcase_name": "Fetching chunk text — short paragraph",
+      "label": "GetDocuments",
+      "description": "3600 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "AddDocumentAsync",
+      "description": "3130 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "GetDocuments",
+      "description": "3600 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "GetDocumentChunkIds",
+      "description": "2840 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "GetChunkText",
+      "description": "2790 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "AddDocumentAsync",
+      "description": "3240 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "GetDocuments",
+      "description": "3460 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "GetDocumentChunkIds",
+      "description": "2740 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "GetChunkText",
+      "description": "3030 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Concurrent upload of 10 documents",
+      "label": "AddDocumentAsync",
+      "description": "2970 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Concurrent upload of 10 documents",
+      "label": "GetDocuments",
+      "description": "3550 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 20",
+      "testcase_name": "Stress test — 50 simultaneous requests",
+      "label": "AddDocumentAsync",
+      "description": "3050 exceeds NFR threshold of 1500ms for Up to 5 MB"
+    }
+  ]
+}
