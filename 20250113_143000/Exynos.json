@@ -1,0 +1,401 @@
+{
+  "system_information": "Exynos",
+  "results": [
+    {
+      "testcase": "Test Case 01",
+      "testcase_name": "Adding .txt file of size around 5 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 01",
+      "testcase_name": "Adding .txt file of size around 5 Kb",
+      "label": "GetDocuments",
+      "description": "1.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 01",
+      "testcase_name": "Adding .txt file of size around 5 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "2.1% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 01",
+      "testcase_name": "Adding .txt file of size around 5 Kb",
+      "label": "GetChunkText",
+      "description": "1.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetDocuments",
+      "description": "2.1% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "3.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 02",
+      "testcase_name": "Adding .pdf file of size around 83 Kb",
+      "label": "GetChunkText",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "AddDocumentAsync",
+      "description": "1.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetDocuments",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "3.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 03",
+      "testcase_name": "Adding .docx file of size around 120 Kb",
+      "label": "GetChunkText",
+      "description": "1.8% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "AddDocumentAsync",
+      "description": "3.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "GetDocuments",
+      "description": "2.6% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 04",
+      "testcase_name": "Adding .pdf file of size around 250 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "3.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "AddDocumentAsync",
+      "description": "1.6% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetDocuments",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "1.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 05",
+      "testcase_name": "Adding .pptx file of size around 500 Kb",
+      "label": "GetChunkText",
+      "description": "1.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2.6% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "GetDocuments",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 06",
+      "testcase_name": "Adding .xlsx file of size around 75 Kb",
+      "label": "GetChunkText",
+      "description": "2.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .pdf file of size around 1 Mb",
+      "label": "GetDocumentChunkIds",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 07",
+      "testcase_name": "Adding .pdf file of size around 1 Mb",
+      "label": "GetChunkText",
+      "description": "1.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "AddDocumentAsync",
+      "description": "1.8% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "GetDocuments",
+      "description": "1.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 08",
+      "testcase_name": "Adding .docx file of size around 2 Mb",
+      "label": "GetChunkText",
+      "description": "1.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "AddDocumentAsync",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetDocuments",
+      "description": "1.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetDocumentChunkIds",
+      "description": "1.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 09",
+      "testcase_name": "Adding .txt file of size around 50 Kb",
+      "label": "GetChunkText",
+      "description": "1.5% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "AddDocumentAsync",
+      "description": "1.5% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "GetDocuments",
+      "description": "3.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "GetDocumentChunkIds",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 10",
+      "testcase_name": "Adding .pdf file of size around 5 Mb",
+      "label": "GetChunkText",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "AddDocumentAsync",
+      "description": "1.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetDocuments",
+      "description": "3.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetDocumentChunkIds",
+      "description": "2.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 11",
+      "testcase_name": "Retrieving document list with 10 records",
+      "label": "GetChunkText",
+      "description": "1.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "GetDocuments",
+      "description": "0.5% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 12",
+      "testcase_name": "Retrieving document list with 50 records",
+      "label": "GetChunkText",
+      "description": "1.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "AddDocumentAsync",
+      "description": "2.1% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "GetDocuments",
+      "description": "3.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "GetDocumentChunkIds",
+      "description": "2.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 13",
+      "testcase_name": "Retrieving document list with 100 records",
+      "label": "GetChunkText",
+      "description": "2.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "AddDocumentAsync",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "GetDocuments",
+      "description": "1.7% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 14",
+      "testcase_name": "Fetching chunk IDs for small document",
+      "label": "GetChunkText",
+      "description": "3.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "AddDocumentAsync",
+      "description": "1.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetDocuments",
+      "description": "3.0% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetDocumentChunkIds",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 15",
+      "testcase_name": "Fetching chunk IDs for large document",
+      "label": "GetChunkText",
+      "description": "2.6% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 16",
+      "testcase_name": "Fetching chunk text — short paragraph",
+      "label": "AddDocumentAsync",
+      "description": "2.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 16",
+      "testcase_name": "Fetching chunk text — short paragraph",
+      "label": "GetDocuments",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 16",
+      "testcase_name": "Fetching chunk text — short paragraph",
+      "label": "GetChunkText",
+      "description": "2.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "AddDocumentAsync",
+      "description": "2.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "GetDocumentChunkIds",
+      "description": "3.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 17",
+      "testcase_name": "Fetching chunk text — long paragraph",
+      "label": "GetChunkText",
+      "description": "2.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "GetDocuments",
+      "description": "3.1% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 18",
+      "testcase_name": "Concurrent upload of 5 documents",
+      "label": "GetDocumentChunkIds",
+      "description": "1.5% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Concurrent upload of 10 documents",
+      "label": "AddDocumentAsync",
+      "description": "2.9% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Concurrent upload of 10 documents",
+      "label": "GetDocuments",
+      "description": "3.4% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 19",
+      "testcase_name": "Concurrent upload of 10 documents",
+      "label": "GetChunkText",
+      "description": "1.7% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 20",
+      "testcase_name": "Stress test — 50 simultaneous requests",
+      "label": "AddDocumentAsync",
+      "description": "2.3% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 20",
+      "testcase_name": "Stress test — 50 simultaneous requests",
+      "label": "GetDocuments",
+      "description": "1.2% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    },
+    {
+      "testcase": "Test Case 20",
+      "testcase_name": "Stress test — 50 simultaneous requests",
+      "label": "GetChunkText",
+      "description": "2.5% error rate exceeds NFR threshold of 0% for Up to 5 MB"
+    }
+  ]
+}
