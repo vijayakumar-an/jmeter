@@ -1,0 +1,91 @@
+[
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Source: NFR Document Shared  |  These thresholds must be met for each API response time"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "File Size Range",
+    "Unnamed: 1": "Min Size",
+    "Unnamed: 2": "Max Size",
+    "Unnamed: 3": "Target Response Time",
+    "Unnamed: 4": "Condition",
+    "Unnamed: 5": "Remarks"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Up to 5 MB",
+    "Unnamed: 1": "0 MB",
+    "Unnamed: 2": "5 MB",
+    "Unnamed: 3": "< 1.5 secs",
+    "Unnamed: 4": "Response Time < 1500 ms",
+    "Unnamed: 5": "Fastest tier — small documents"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "5 MB to 10 MB",
+    "Unnamed: 1": "5 MB",
+    "Unnamed: 2": "10 MB",
+    "Unnamed: 3": "< 3 secs",
+    "Unnamed: 4": "Response Time < 3000 ms",
+    "Unnamed: 5": "Medium documents"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "10 MB to 15 MB",
+    "Unnamed: 1": "10 MB",
+    "Unnamed: 2": "15 MB",
+    "Unnamed: 3": "< 4.5 secs",
+    "Unnamed: 4": "Response Time < 4500 ms",
+    "Unnamed: 5": "Moderate size documents"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "15 MB to 25 MB",
+    "Unnamed: 1": "15 MB",
+    "Unnamed: 2": "25 MB",
+    "Unnamed: 3": "< 7.5 secs",
+    "Unnamed: 4": "Response Time < 7500 ms",
+    "Unnamed: 5": "Large documents"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "26 MB to 50 MB",
+    "Unnamed: 1": "26 MB",
+    "Unnamed: 2": "50 MB",
+    "Unnamed: 3": "< 15 secs",
+    "Unnamed: 4": "Response Time < 15000 ms",
+    "Unnamed: 5": "Very large — max supported size"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "📌  How to Use This NFR Sheet"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Step 1",
+    "Unnamed: 1": "Identify the file size used in each Test Case (e.g. TC02 = 83 Kb → falls under 'Up to 5 MB' tier)"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Step 2",
+    "Unnamed: 1": "Note the Target Response Time for that tier (e.g. Up to 5 MB → must be < 1500 ms)"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Step 3",
+    "Unnamed: 1": "Compare the Average / 90% Line / 95% Line values from the Snapdragon / Exynos / MediaTek sheets"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Step 4",
+    "Unnamed: 1": "If the value is BELOW the target → ✅ PASS   |   If ABOVE the target → ❌ FAIL"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "Step 5",
+    "Unnamed: 1": "Record the actual result in the 'Actual Result' column of your test case sheet"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "🔖  Pass / Fail Legend"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "✅ PASS",
+    "Unnamed: 1": "Response time is within the NFR target"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "❌ FAIL",
+    "Unnamed: 1": "Response time exceeds the NFR target"
+  },
+  {
+    "Non-Functional Requirements (NFR) — Target Response Time": "⚠️ NOTE",
+    "Unnamed: 1": "TOTAL row uses SUM/AVG/MAX — not for NFR check"
+  }
+]
